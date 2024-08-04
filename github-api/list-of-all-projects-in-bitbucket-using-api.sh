@@ -11,7 +11,7 @@
 username="USERNAME"
 password="PAT"
 
-base_url="https://https://bitbucket.com"
+base_url="https://bitbucket.com"
 
 project_url="$base_url/rest/api/1.0/projects"
 
