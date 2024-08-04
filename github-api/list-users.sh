@@ -1,5 +1,18 @@
 #!/bin/bash
 
+#####################################################
+# About: This script will fetch the list of users who have access to the repository...
+# Inputs Required:
+#       1. export username="admin-username"
+#       2. export token="Persona-Access-Token"
+#       3. Use the repo-owner and repo-name while running the script as shown in the command "./list-users <repo-owner> <repo-name>"
+#
+# Owner: Forked form other source but few chamges done by Mohd Imran
+#
+#####################################################
+
+#helper ()
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -35,6 +48,14 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+#function helper () {
+# expected_cmd_args=2
+# if [ "$#" -ne $expected_cmd_args]; then
+#  echo "Please execute the script with required args"
+#  exit 1
+# fi
+#}
 
 # Main script
 
